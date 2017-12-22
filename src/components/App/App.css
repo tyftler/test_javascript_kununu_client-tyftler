@@ -1,0 +1,43 @@
+#root {
+  margin: 30px;
+}
+
+h3 {
+  margin-bottom: 30px;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 50px;
+  grid-gap: 15px;
+  grid-template-columns: 37% 37% auto;
+  -ms-grid-columns: 37% 37% 1fr;
+}
+
+.wrapper > div {
+  align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.wrapper .old {
+  -ms-grid-column: 1;
+  -ms-grid-row: 1fr;
+}
+
+.wrapper .new {
+  -ms-grid-column: 2;
+}
+
+.wrapper .match {
+  -ms-grid-column: 3;
+}
+
+.wrapper .header {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.wrapper .matched .rbt-input {
+  border-color: #00b300;
+}
